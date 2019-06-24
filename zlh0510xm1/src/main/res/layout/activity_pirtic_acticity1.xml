@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PirticActicity1">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/detail_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_24"
+            android:src="@mipmap/common_nav_btn_back_n_hdpi"/>
+        <RadioGroup
+            android:id="@+id/detail_group"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/detail_goods"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:checked="true"
+                android:text="商品"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/detail_detail"
+                android:layout_width="0dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:text="详情"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/detail_context"
+                android:background="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="评论"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:id="@+id/detail_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_180"
+                ></com.youth.banner.Banner>
+            <TextView
+                android:id="@+id/detail_price"
+                android:text="￥0.0"
+                android:textSize="@dimen/sp_20"
+                android:layout_below="@+id/detail_banner"
+                android:layout_alignParentLeft="true"
+                android:textColor="#f00"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_num"
+                android:text="已售0件"
+                android:layout_below="@+id/detail_banner"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_below="@+id/detail_price"
+                android:layout_margin="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <WebView
+                android:id="@+id/detail_web"
+                android:layout_below="@+id/detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></WebView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/sync_gwc"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="140dp"
+        android:src="@mipmap/common_btn_add_n_hdpi" />
+
+    <ImageView
+        android:id="@+id/shopingcar"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="82dp"
+        android:padding="@dimen/dp_5"
+        android:src="@mipmap/common_btn_buy_n_hdpi"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/dlbj">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_150"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_43"
+            android:src="@drawable/register_icon_phone_n_hdpi" />
+
+        <EditText
+            android:id="@+id/login_edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:hint="手机号"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:textColorHint="#fff"
+            android:background="@null" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_39"
+        android:layout_height="@dimen/dp_2"
+        android:background="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_43"
+            android:src="@drawable/register_icon_lock_n_hdpi" />
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            android:layout_width="@dimen/dp_209"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_22"
+            android:hint="登录密码"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:textColorHint="#fff"
+            android:background="@null" />
+        <ImageView
+            android:id="@+id/login_image_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_23"
+            android:src="@drawable/login_icon_eye_n_hdhpi" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_39"
+        android:layout_height="@dimen/dp_2"
+        android:background="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_18"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/login_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:text="记住密码"/>
+        <TextView
+            android:id="@+id/login_text_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_144"
+            android:text="快速注册"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/login_btn_dl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_37"
+            android:layout_marginRight="@dimen/dp_37"
+            android:layout_marginTop="@dimen/dp_100"
+            android:background="@drawable/button_circle_shape"
+            android:textColor="#FE5A52"
+            android:text="登录"/>
+    </LinearLayout>
+</LinearLayout>
